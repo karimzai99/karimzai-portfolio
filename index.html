@@ -447,6 +447,79 @@
           width: 100%;
         }
       }
+      .contact-section {
+  padding: 80px 90px 100px;
+}
+
+.contact-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  margin-bottom: 30px;
+}
+
+.contact-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.contact-intro {
+  color: #475569;
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+.contact-box {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-item {
+  flex: 1;
+  min-width: 240px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #dbe7ff;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.06);
+  transition: all 0.25s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-4px);
+  border-color: #bfdbfe;
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.12);
+}
+
+.contact-item i {
+  font-size: 1.3rem;
+  color: #2563eb;
+  margin-top: 3px;
+}
+
+.contact-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #0f172a;
+}
+
+.contact-item a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
     </style>
   </head>
 
@@ -503,7 +576,7 @@
 
         <div class="buttons">
           <a href="#projects" class="btn btn-primary">View My Projects</a>
-          <a href="#" class="btn btn-secondary">Contact Me</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
 
         <div class="social">
@@ -595,5 +668,46 @@
         </div>
       </div>
     </section>
+    <section class="contact-section" id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-header">
+      <div class="projects-label">Contact</div>
+      <h2 class="contact-title">Let’s Connect</h2>
+      <p class="contact-intro">
+        Whether you have an opportunity, a project idea, or just want to connect,
+        feel free to reach out. I’m always open to learning, collaboration, and
+        new challenges.
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <strong>Email</strong>
+          <p>
+            <a href="mailto:your@email.com">your@email.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fa-brands fa-linkedin"></i>
+        <div>
+          <strong>LinkedIn</strong>
+          <p>Let’s connect professionally</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fa-brands fa-github"></i>
+        <div>
+          <strong>GitHub</strong>
+          <p>Check out my projects and code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   </body>
 </html>
